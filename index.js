@@ -32,15 +32,48 @@ const { default: inquirer } = require("inquirer")
 // Finally, although it’s not a requirement, you should consider adding validation to ensure that user input provided is in the proper expected format. 
 
 const inquirer = require(inquirer);
+//require node: 
 const fs = require('fs');
 
+const roleArray = ["Manager", "Engineer", "Intern",]
+
+// TODO: Create an array of questions for user input
 inquirer
 .prompt([
     {
         type: 'input',
-        name: 'github',
-        message: 'Enter your GitHub Username',
+        name: 'name',
+        message: 'What is your name?',
       },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',
+  
+      },
+      {
+        type: 'input',
+        name: 'phone',
+        message: 'What is your office (extension) number?',
+  
+      },
+    {
+        type: 'list',
+        name: 'role',
+        message: 'What is your job title?',
+        choices: roleArray, 
+      },
+      {
+        type: 'input',
+        name: 'username',
+        message: 'What is your GitHub username?',
+      },
+      {
+        type: 'input',
+        name: 'school',
+        message: 'What school are you currently attending?',
+      },
+
 ])
 
 ])
