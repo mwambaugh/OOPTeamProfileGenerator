@@ -76,7 +76,6 @@ inquirer
 
 ])
 
-])
 .then((answers) => {
   const htmlPageContent = generateHTML(answers);
 
