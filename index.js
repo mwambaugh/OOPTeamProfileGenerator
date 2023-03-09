@@ -90,8 +90,8 @@ const questions = async() => {
     newEmployeeData.push(newIntern);
   }};
 
-const addEmployeeData = await inquirer
-.prompt ([
+const addEmployeeData = 
+inquirer.prompt ([
   {
     name:'addEmployee',
     type: 'list',
