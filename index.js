@@ -88,7 +88,7 @@ const questions = async() => {
       internData.school,
     );
     newEmployeeData.push(newIntern);
-  }};
+  }
 
 const addEmployeeData = 
 inquirer.prompt ([
@@ -103,7 +103,7 @@ inquirer.prompt ([
 if (addEmployeeData.addEmployee === "add a new Employee") {
   return promptQuestions()
 } 
-return createTeam();
+return createTeam()};
 
 function createTeam (){
     fs.writeFile('./index.html', generateHTML(newEmployeeData),
