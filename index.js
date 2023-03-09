@@ -8,11 +8,10 @@ const Manager = require('./lib/Manager');
 const Intern = require('./lib/Intern');
 
 const roleArray = ["Engineer", "Intern","Manager"];
-const teamArray = [];
+const newEmployeeData = [];
 
-// TODO: Create an array of questions for user input
-// start with manager = bc only one //start assuming man. is first user/ input, then ask to add other ppl.
-const addEmployee = async() => {
+
+const questions = async() => {
   const answers = await inquirer
 .prompt([
 {
@@ -107,11 +106,6 @@ if (addEmployeeData.addEmployee === "add a new Employee") {
 return createTeam();
 
 function createTeam (){
-  .then((answers) => {
-    const htmlPageContent = generateHTML(answers);
-  if (answer.employeeRole)
-    fs.writeFile('./index.html', htmlPageContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created index.html!')
-    )
-  });
-}
+    fs.writeFile('./index.html', generateHTML(newEmployeeData),
+  );
+  }
