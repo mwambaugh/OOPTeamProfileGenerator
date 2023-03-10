@@ -38,7 +38,7 @@ const questions = async() => {
         ])
 
   if (answers.role === "Manager") {
-    const managerRole = await inquirer
+    const managerData = await inquirer
     .prompt([
         {
           type: 'input',
@@ -46,11 +46,11 @@ const questions = async() => {
           message: 'What is the office number of the manager?',
           },
     ])
-    const newManager = newManager (
+    const newManager = new Manager (
       answers.name,
       answers.id,
       answers.email,
-      managerRole.officeNumber
+      answers.officeNumber
     );
     newEmployeeData.push(newManager);
 
@@ -67,7 +67,7 @@ const questions = async() => {
       answers.name,
       answers.id,
       answers.email,
-      answers.usernameData.username
+      answers.username,
     );
     newEmployeeData.push(newEngineer);
     
@@ -90,8 +90,8 @@ const questions = async() => {
     newEmployeeData.push(newIntern);
   }
 
-const addEmployeeData = 
-inquirer.prompt ([
+const addEmployeeData = await inquirer
+.prompt ([
   {
     name:'addEmployee',
     type: 'list',
@@ -101,11 +101,14 @@ inquirer.prompt ([
 ])
 
 if (addEmployeeData.addEmployee === "add a new Employee") {
-  return promptQuestions()
+  return questions()
 } 
-return createTeam()};
+return generateTeam()
+}
 
-function createTeam (){
+function generateTeam (){
     fs.writeFile('./index.html', generateHTML(newEmployeeData),
   );
   }
+
+  questions();
