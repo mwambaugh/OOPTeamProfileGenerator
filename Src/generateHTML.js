@@ -41,7 +41,7 @@ const generateIntern = function (intern){
     `;
 }
 
-generateHTML = (data) => {
+module.exports = (data) => {
 
     pageArray = [];
 
@@ -69,7 +69,7 @@ generateHTML = (data) => {
 }
 
 const employeeCards = pageArray.join('')
-const genererateTeam = generateTeamPage(employeeCards);
+const generateTeam = generateTeamPage(employeeCards);
 return generateTeam;
 }
 
@@ -98,5 +98,3 @@ const generateTeamPage = function (employeeCards){
 </html>
     `;
 }
-
-module.exports = generateHTML;

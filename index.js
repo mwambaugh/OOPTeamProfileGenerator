@@ -101,9 +101,9 @@ const addEmployeeData = await inquirer
 ])
 
 if (addEmployeeData.addEmployee === "add a new Employee") {
-  return questions()
+  questions()
 } 
-return generateTeam()
+else generateTeam()
 }
 
 function generateTeam (){
