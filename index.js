@@ -107,8 +107,9 @@ else generateTeam()
 }
 
 function generateTeam (){
-    fs.writeFile('./index.html', generateHTML(newEmployeeData),
-  );
+  fs.writeFileSync("./index.html", generateHTML(newEmployeeData)); 
   }
 
   questions();
+
+  

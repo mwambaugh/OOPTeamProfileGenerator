@@ -2,9 +2,10 @@ const generateManager = function (manager){
     return `
     <div class="container">
     <h1 class="display-4">Hi! My name is ${manager.name}</h1>
-    <p class="lead">I am a talented Manager on this team.</p>
+    <p class="lead">I am a talented MANAGER on this team.</p>
     <h3><span class="badge badge-secondary">Contact Me</span></h3>
     <ul class="list-group">
+    <li class="list-group-item">My id number is ${manager.id}</li>
       <li class="list-group-item">My email is is ${manager.email}</li>
       <li class="list-group-item">My office extenstion number is ${manager.officeNumber}</li>
     </ul>
@@ -16,10 +17,11 @@ const generateEngineer = function (engineer){
     return `
     <div class="container">
     <h1 class="display-4">Hi! My name is ${engineer.name}</h1>
-    <p class="lead">I am a talented ${engineer.role} on this team.</p>
+    <p class="lead">I am a talented ENGINEER on this team.</p>
     <h3><span class="badge badge-secondary">Contact Me</span></h3>
     <ul class="list-group">
       <li class="list-group-item">My GitHub username is ${engineer.github}</li>
+      <li class="list-group-item">My id number is ${engineer.id}</li>
       <li class="list-group-item">My email is is ${engineer.email}</li>
     </ul>
   </div>
@@ -30,10 +32,11 @@ const generateIntern = function (intern){
     return `
     <div class="container">
     <h1 class="display-4">Hi! My name is ${intern.name}</h1>
-    <p class="lead">I am a talented ${intern.role} on this team.</p>
+    <p class="lead">I am a talented INTERN on this team.</p>
     <p class="lead">I am currently attending ${intern.school} and will graduate June 2023.</p>
     <h3><span class="badge badge-secondary">Contact Me</span></h3>
     <ul class="list-group">
+    <li class="list-group-item">My id number is ${intern.id}</li>
       <li class="list-group-item">My GitHub username is ${intern.github}</li>
       <li class="list-group-item">My email is is ${intern.email}</li>
     </ul>
