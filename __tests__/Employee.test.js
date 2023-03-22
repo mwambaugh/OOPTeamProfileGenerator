@@ -5,7 +5,7 @@ test ('CREATE employee card', () => {
 
     expect(employee.name).toEqual(expect.any(String));
     expect(employee.id).toEqual(expect.any(Number));
-    expect(employee.email).toEqual(expect.any.(String));
+    expect(employee.email).toEqual(expect.any(String));
 });
 
 test('GET employee by name', () => {
