@@ -1,4 +1,5 @@
 const generateManager = function (manager){
+    console.log(manager);
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">
@@ -9,7 +10,7 @@ const generateManager = function (manager){
             <div class="card-body">
                 <p class="id">ID: ${manager.id}</p>
                 <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
-                <p class="office">Office Number: ${manager.officeNumber}</p>
+                <p class="officeNumber">Office Number: ${manager.officeNumber}</p>
             </div>
         </div>
     </div>
@@ -29,7 +30,7 @@ const generateEngineer = function (engineer){
               <div class="card-body">
                   <p class="id">ID: ${engineer.id}</p>
                   <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-                  <p class="github">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+                  <p class="github">Github: <a href="https://github.com/${engineer.gitHub}">${engineer.gitHub}</a></p>
               </div>
           </div>
       </div>
@@ -76,7 +77,7 @@ generateHTML = (data) => {
             pageArray.push(engineerCard);
     }
 
-    if (role === 'intern') {
+    if (role === 'Intern') {
         const internCard = generateIntern(employee);
 
         pageArray.push(internCard);

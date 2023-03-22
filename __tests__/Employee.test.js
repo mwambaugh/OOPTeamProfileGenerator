@@ -1,7 +1,7 @@
 const Employee = require ('../lib/Employee');
 
 test ('CREATE employee card', () => {
-    const employee = new Employee ('Rigby', 45, 'ribgywilson@gmail.com');
+    const employee = new Employee ('Rigby', 4545, 'ribgywilson@gmail.com');
 
     expect(employee.name).toEqual(expect.any(String));
     expect(employee.id).toEqual(expect.any(Number));
@@ -9,21 +9,21 @@ test ('CREATE employee card', () => {
 });
 
 test('GET employee by name', () => {
-    const employee = new Employee ('Rigby', 45, 'ribgywilson@gmail.com');
-    expect(emplyoee.getName()).toEqual(expect.any(String));
+    const employee = new Employee ('Rigby', 4545, 'ribgywilson@gmail.com');
+    expect(employee.getName()).toEqual(expect.any(String));
 });
 
 test('GET employee by ID', () => {
-    const employee = new Employee ('Rigby', 45, 'ribgywilson@gmail.com');
-    expect(emplyoee.getID()).toEqual(expect.any(Number));
+    const employee = new Employee ('Rigby', 4545, 'ribgywilson@gmail.com');
+    expect(employee.getId()).toEqual(expect.any(Number));
 });
 
 test('GET employee by email', () => {
-    const employee = new Employee ('Rigby', 45, 'ribgywilson@gmail.com');
-    expect(emplyoee.getEmail()).toEqual(expect.stringContianing(employee.email.toString()));
+    const employee = new Employee ('Rigby', 4545, 'ribgywilson@gmail.com');
+    expect(employee.getEmail()).toEqual(expect.stringContaining(employee.email.toString()));
 });
 
 test('GET employee role', () => {
-    const employee = new Employee ('Rigby', 45, 'ribgywilson@gmail.com');
-    expect(emplyoee.getRole()).toEqual('Employee');
+    const employee = new Employee ('Rigby', 4545, 'ribgywilson@gmail.com');
+    expect(employee.getRole()).toBe('Employee');
 });

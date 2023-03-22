@@ -50,8 +50,9 @@ const questions = async() => {
       answers.name,
       answers.id,
       answers.email,
-      answers.officeNumber
+      managerData.officeNumber
     );
+    console.log(newManager);
     newEmployeeData.push(newManager);
 
   } else if (answers.role === "Engineer") {
