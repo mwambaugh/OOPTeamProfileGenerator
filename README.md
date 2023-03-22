@@ -34,12 +34,15 @@ This application won’t be deployed, you’ll also need to provide a link to a 
 Because this Challenge will require the use of the Inquirer package, ensure that you install and use Inquirer version 8.2.4. To do so, use the following command in your project folder: npm i inquirer@8.2.4.
  
 ## Links  
-[Screencast Video Link]()
+[Screencast Video Link](https://watch.screencastify.com/v/57hzINI0S1TaE7aRBh3I)
 [A sample HTML file generated using the application]()
 [GitHub repository containing the application code.]()
 
 ## Visuals 
-[Screenshot Tests]()
+[Screenshot of Generated HTML code](./assets/photos/ScreenshotCodeGenHTML.jpg)
+[Screenshot of Generated HTML Browser](./assets/photos/ScreenshotSampleHTMLGen.jpg)
+[Screenshot of passed tests from Walkthrough](./assets/photos/Screenshottests.jpg)
+
 
 ## Contributing 
 This assignment was worked on by student, M.C. Wambaugh, with the support of her TA's during office hours and meeting regularly with a tutor, and her classrom peers. The student also used universial resources such as  YouTube.com, shields.io/, and our class repo examples. Many thanks to those who continue to support learning in the technological community.
